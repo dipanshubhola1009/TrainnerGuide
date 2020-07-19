@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./logo.png" type="image/icon type">
+    <script src="https://kit.fontawesome.com/ab36044a4c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,100;1,300;1,600&display=swap" rel="stylesheet">
+    <title>Tampa academy</title>
+</head>
+<body>
+    <style>
+        /*   Custom theme elements*/
+        .col-12{
+            margin: 20px
+        }
+         .fab{
+             font-size: 30px;
+             margin: 10px;
+         }
+         .col{
+            text-align: center;
+            align-content: center;
+            margin: 0px 0xp;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+         text-decoration: none;
+         color: #DCD671 ;
+        }
+        h3{
+            text-align: start;
+            font-size: 50px;
+        }
+        p{
+            font-size: 14px;
+            font-weight:100;
+            text-align: start;
+        }
+        .Color{
+            background-color:#DCD671 ;
+            height: 2px;
+        }
+        .btn-Border{
+            margin-top: 15px;
+            border: 1px solid honeydew;
+        }
+        .btn:hover{
+            transform: scale(1.1);
+        }
+        .btn-Color{
+            background-color:#DCD671 ;
+        }
+        .Extra-Padding{
+            padding: 4px 40px;
+        }
+         
+
+        body{
+            margin: 0px 0px;
+            padding: 0px 0px;
+            letter-spacing: 1px;
+            font-family: 'Montserrat', sans-serif ;
+        }
+        @keyframes fadeDown {
+            from{
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to{
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        @keyframes FadeUp {
+            from{
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            to{
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        /*--------------Top-Banner------------*/
+        .Top-Banner{
+            animation: fadeDown 2s;
+            max-width: 100%;
+            height: 90vh;
+            z-index: -1;
+            position: relative;
+        }
+       
+        .Custom-Navbar{
+            animation: FadeUp 2s;
+            width: 80%;
+            padding: 0px auto;
+            margin: -30px auto 0px auto;
+            background-color: rgb(235, 233, 232);
+            border-radius: 30px;
+            box-shadow: 5px 5px 5px  rgb(182, 181, 181);
+            z-index: 100;
+           text-align: center;
+        }
+        .Custom-Navbar:hover{
+            transform: scale(1.01);
+            transform: translateY(-8px);
+        }
+        .Navbar-links{
+            height: 100%;
+            justify-items: center;
+            padding: 12px 60px;
+        }
+        .Link{
+            align-self: center;
+            margin: 0px 20px;
+            font-size: 28px ;
+            font-family:Arial, Helvetica, sans-serif;
+            font-weight: 100 !important;
+        }
+
+        /*About-section*/
+        .About-Section{
+            width: 60%;
+            margin: auto;
+            margin: 60px auto;
+            align-content: center;
+        }
+       
+        .About-Pic{
+            width: 100%;
+            box-shadow: 5px 5px 5px rgb(177, 174, 174);
+            align-self: auto;
+        }
+        .About-Content{
+              margin-top: 100px;
+        }
+        /*Our-Coaches*/
+        .Our-Coaches{
+            
+              background-image:url("./bg.jpg");
+        }
+        .Our-Title{
+            margin-top: 210px;
+            color: honeydew;
+            font-size: 50px;
+            letter-spacing: 2px;
+        }
+        .container{
+            margin: 60px auto;
+            padding: 100px 0px;
+        }
+        .Our-Card{
+            font-size: 14px;
+            width: 250px;
+            height: 250px;
+            text-align: start;
+            padding: 50px 20px 0 20px;
+            font-weight: lighter !important;
+        }
+
+        /* pRogram section*/
+
+        .Program-Section{
+            width: 100%;
+            text-align: center;
+        }
+        .Program-Card{
+            width: 32%;
+            min-width: 300px;
+            margin:10px  auto;
+            border-radius: 5px;
+            height: 350px;
+            background-color: #2C5162 ;
+            color: honeydew;
+            padding: 40px;
+            text-align: start;
+        }
+        .Program-Card:hover{
+            background-color:#DCD671 ;
+            color: #2C5162;
+        }
+        .Program-title{
+            font-size: 32px;
+            letter-spacing: 2px;
+        }
+        .Program-SubTitle{
+            font-size: 26px;
+        }
+
+        /*Contact-us-Section*/
+
+        .Contact-Section{
+            margin:100px auto;
+            align-content: space-around;
+            
+        }
+        .Contact-Head{
+            min-width: 300px;
+            text-align: start;
+            font-size: 40px;
+            color: #DCD671;
+         }
+         .Contact-Details{
+             min-width: 300px;
+             text-align: start;
+             letter-spacing: 2px;
+             font-size: 14px;
+         }
+         .Contact-a{
+            
+             color: black;
+         }
+        
+         /*Footer*/
+        .Footer-Section{
+            padding: 100px;
+            background-color: #2C5162;
+            color:honeydew !important;
+        }
+        .Footer-a{
+            color:honeydew
+        }
+        .Footer-Contact{
+            text-align: start;
+        }
+        .Footer-Mini-Logo{
+            margin-top: 30px;
+            text-align: center;
+        }
+        .Footer-Timing{
+            text-align: start;
+        }
+        /*Copyright*/
+        .Copyright-Section{
+            background-color: #DCD671 ;
+            padding: 50px;
+            text-align: center;
+            color:honeydew;
+        }
+    </style>
+    <div class="Top-Banner">
+        <img src="./banner.jpg" width="100%" height="100%">
+    </div>
+    <div class="Custom-Navbar">
+         <div class="Navbar-links" >
+             
+            <a href="#" class="Link">Home</a>
+            <a href="#About-Section" class="Link">About</a>
+            <a href="#Our-Couches-Section" class="Link">Our Couches</a>
+            <a href="#Programs-Section" class="Link">Program </a>
+            <a href="#Contact-Us-Section" class="Link">Contact Us</a>
+            
+            <button class="btn btn-Color Extra-Padding float-right">Join</button>
+         </div>
+    </div>
+    <!------------------------about section  --------------------->
+    <div class="About-Section" id="About-Section">
+        <div class="row">
+                <div class=" col-12 col-sm">
+                    <img src="./about us.jpg" class="About-Pic" >
+                </div>
+                <div class=" col-12 col-sm">
+                    <div class="About-Content">
+                    <h3 >About Us</h3>
+                    <br>
+                    <p>
+                        (Tampa Tennis Academy) TTA is a tennis coaching centre for children and adults, established in 2010.
+                        We’re located in Tampa, Florida. 
+                        <br>
+
+                        We coach kids and adults, in the game of tennis, and irrespective of whether you are aiming for a professional career in tennis or looking to learn the game casually or to polish your skills after a gap, we have a program that would be suitable for you.
+                    </p>
+                    <br>
+                    <hr class="Color">
+                    <button class="btn btn-Color float-right">More Details</button> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--------------------------------Our Coach section--------------------------------------------------->
+    <div class="Our-Coaches" id="Our-Couches-Section">
+                    
+        <div class="container">
+
+            <div class="row">
+                   
+                 <div class="col-12 col-sm-8">
+                    <div class="row">
+                        <div class="Our-Card Color">
+                            
+                            Mr. Andrew Jacobs 
+                            <br>
+                            Age: 41
+                            <br>
+                            Email: andrewjacobs@tta.com
+                            <br>
+                            <button class="btn btn-Border">Know More</button>
+                        </div>
+
+                        <img src="./coach2.jpg" alt="coach2" width="250" height="250">
+
+
+                        <div class="Our-Card Color">
+
+                            Ms. Kelly Robinson <br>
+                            Age:39 <br>
+                            Email: kellyrobinson2201@tta.com
+                            <button class="btn btn-Border">Know More</button>
+                        </div>
+                    
+                    </div>
+
+                    <div class="row">
+
+                        <img src="./coach1.jpg" alt="coach2" width="250" height="250">
+
+
+                        <div class="Our-Card Color">
+                            
+                            Mr. Joseph Pereira <br>
+
+                            Age: 36<br>
+                            Email: josepereira_4@tta.com
+                            <button class="btn btn-Border">Know More</button>
+                        </div>
+
+                        <img src="./coach3.jpg" alt="coach2" width="250" height="250">
+
+                    </div>
+                </div>
+
+                 <div class="col-12 col-sm">
+                        <div class="Our-Title">
+                            Our Coaches
+                        </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------------------Program section----------------------------------------->
+    <div class="Program-Section" id="Programs-Section">
+        <h2>Our Programs</h2>
+
+        <div class="row">
+            <div class="Program-Card">
+                <span class="Program-title">Beginners Program</span> 
+                <br>
+                <span class="Program-Subtitle">(Kids)</span>
+                <br>
+                <br><br>
+                <p>
+                Duration - Six Months,<br> one 2-hour session each on Monday,
+                <br>
+                 Wednesday and Friday (6AM or 6PM)
+                </p>
+            </div>
+            <div class="Program-Card">
+                <span class="Program-title">Beginners Program</span>
+                <span class="Program-Subtitle">(Adults)</span>
+                <br>
+                <br>
+                <br>
+                
+                <p>
+                Duration - Six Months,
+                <br> one 2-hour session each on Monday,
+                <br> Wednesday and Friday (6AM or 6PM)
+                </p>
+            </div>
+            <div class="Program-Card">
+                <span class="Program-title">Intermediate Program</span>
+                <br>
+                <div class="Program-Subtitle">(Kids)</div>
+                <br>
+                <br>
+                
+                
+                <p>
+
+                Duration - Four Months,<br> one 2-hour session each on Tuesday,<br> Thursday and Saturday (6AM or 6PM)
+                </p>
+                
+            </div>
+        </div>
+        <div class="row">
+            <div class="Program-Card">
+                <div class="Program-title">Intermediate Program</div>
+                <div class="Program-Subtitle">(Kids)</div>
+                <br>
+                <br>
+                
+                
+                <p>
+
+                Duration - Four Months,<br> one 2-hour session each on Tuesday,<br> Thursday and Saturday (6AM or 6PM)
+                </p>
+                
+            </div>
+            <div class="Program-Card">
+                <div class="Program-title">Advanced Program </div>
+                <div class="Program-Subtitle">(Adults)</div>
+                <br>
+                <br>
+                
+                
+                <p>
+
+                Duration - Three Months, <br>one 2-hour session each on Tuesday,<br> Thursday and Saturday (6AM or 6PM)
+                </p>
+            </div>
+            <div class="Program-Card">
+                <div class="Program-title"> Weekend Program </div>
+                <div class="Program-Subtitle">(For working professionals)</div>
+               
+                <br>
+                <br>
+                
+                
+                <p>
+                Duration - Ten months to 1 Year; <br> two 3-hour sessions one each on Saturday and Sunday 
+                </p>
+                 
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------------------Contact-Us----------------------------------------------->
+    <div class="Contact-Section" id="Contact-Us-Section">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                    <div class="Contact-Body">
+                        <div class="Contact-Head"> Contact Us</div>
+                        <hr>
+                        <div class="Contact-Details">
+
+                        Address: 
+                        1428,
+                        Country Line Road, <br>
+                        Tampa, Florida, USA <br>
+                        Zip Code - 33602
+                        <br>
+                        
+                        Phone: <a class="Contact-a" href="tel:+727-807-5181">727-807-5181</a>
+                        <br>
+                        Email: <a class="Contact-a" href="mailto:info@tta.com">info@tta.com</a>
+                        </div>
+                    </div>
+            </div>
+            <div class="col"></div>
+       </div>
+    </div>
+<!---------------------------------Footer  --------------------------------->
+<div class="Footer-Section">
+    <br>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-12 col-sm">
+            <img src="./logo.png" alt="logo">
+        </div>
+        <div class="col-12 col-sm">
+            <hr class="Color">
+            <div class="Footer-Contact">
+            1428,
+            Country Line Road, <br><br>
+            Tampa, Florida, USA <br><br>
+            Zip Code - 33602
+            <br><br>
+            
+            Phone: <a class="Footer-a" href="tel:+727-807-5181">727-807-5181</a>
+            <br><br>
+            Email: <a class="Footer-a" href="mailto:info@tta.com">info@tta.com</a>
+            </div>
+        </div>  
+        <div class="col-12 col-sm">
+            <a class="Footer-a" href="#">Home</a><br><br>
+            <a class="Footer-a" href="#About-Section">About</a><br><br>
+            <a class="Footer-a" href="#Our-Coaches-Section">Our Coaches</a><br><br>
+            <a class="Footer-a" href="#Programs-Section">Programs</a><br><br>
+            <a class="Footer-a" href="#Contact-Us-Section">Contact Us</a><br><br>
+        </div>
+        <div class="col-12 col-sm">
+            <div class="Footer-head">FOLLOW US</div>
+            <hr>
+            <div class="Footer-Mini-Logo">
+                
+                    <i class="fab fa-facebook-f  "></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-google-plus-g"></i>
+                
+            </div>
+        </div>
+        <div class="col-12 col-sm">
+            <div class="Footer-head">WE ARE OPEN</div>
+            <hr>
+            <div class="Footer-Timing">
+                Mon-Thus : 9:30 - 21:00 <br><br>
+                Fri: 6:00 - 21:00 <br><br>
+                Sat: 10:00 - 15:00
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------CopyWrite--------------------------------------------------------->
+<div class="Copyright-Section">
+    Copyright @ All Rights Reserved
+</div>
+
+
+</body>
+</html>
